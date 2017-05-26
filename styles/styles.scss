@@ -1,3 +1,22 @@
+.background {
+    // background-color: red;
+    background-image: url("../aiden-marples-3052.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
 .placeholder{
-    color: red
+    z-index: 1;
+    color: red;
+    height: 100px;
+    width: 100%;
+
+    
+    h1:nth-child(3){
+        color: green;
+        &:hover{
+            color: blue;
+        }
+    }
 }

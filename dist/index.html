@@ -5,17 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./dist/style.css" >
+    <link rel="stylesheet" href="./dist/style.css">
     <title>Anderson Music App</title>
 </head>
+
 <body ng-controller="mainCtrl">
 
+    <div class="background">
 
 
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+        <div class="placeholder" ng-repeat="artist in artists">
+            <h1>{{artist.name}}</h1>
+            <h1>{{artist.popularity}}</h1>
+            <h1>{{artist.genres}}</h1>
+        </div>
+
+        <div class="placeholder" ng-repeat="track in tracks">
+            <h1>{{track.name}}</h1>
+            <h1>{{track.track_number}}</h1>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
     <script src="./dist/js/bundle.js"></script>
-    
-    
 
 </body>
 
