@@ -1,1 +1,2 @@
-angular.moduel("app", [])
+angular.module("app", [])
+

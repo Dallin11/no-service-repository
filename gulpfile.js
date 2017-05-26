@@ -13,10 +13,6 @@ console.log("hi how are ya")
 })
 
 gulp.task('build-css', function(){
-
-})
-
-gulp.task('build-css', function(){
     return gulp.src('./styles/*')
     .pipe(sourcemaps.init())
     .pipe(sass())
@@ -29,13 +25,13 @@ gulp.task('build-css', function(){
 
 
 gulp.task('build-js', function() {
-   return gulp.src('js/**/*.js')               
-      .pipe(sourcemaps.init())
-      .pipe(print())                        
+   return gulp.src('./js/**/*.js')               
+    //   .pipe(sourcemaps.init())
+    //   .pipe(print())                        
       .pipe(babel({ presets: ['es2015'] }))
       .pipe(concat('bundle.js'))
-      .pipe(uglify())
-      .pipe(sourcemaps.write('./')) 
+    //   .pipe(uglify())
+    //   .pipe(sourcemaps.write('./')) 
       .pipe(gulp.dest('./dist/js')); 
 });
 
