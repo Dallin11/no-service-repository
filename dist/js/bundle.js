@@ -81,11 +81,18 @@ angular.module("app").service("mainSvc", function ($http) {
             url: "https://api.spotify.com/v1/albums/6akEvsycLGftJxYudPjmqK/tracks?limit=2"
         });
     };
+
+    var getSearch = function getSearch() {
+        return $http({
+            method: "GET",
+            url: "https://api.spotify.com/v1/search"
+        });
+    };
     var getAllData = function getAllData() {
         getArtist().then(function (artists) {
             getTracks().then(function (tracks) {
                 getAlbums().then(function (albums) {
-                    console.log(artists, tracks, albums);
+                    console.log(artists, tracks);
                 });
             });
         });

@@ -20,6 +20,10 @@
   outline:none;
   z-index:10000000000000;
 }
+.menu{
+    color: #0981DA;
+
+}
 .caption{
     position: absolute;
     bottom:0px;
@@ -27,11 +31,11 @@
 }
 .big-box{
     position: absolute;
-    bottom: 395px;
+    bottom: 345px;
     width: 300px;
     font-size: 20px;
     margin-right: 50px;
-    margin-left: 50px;
+    margin-left: 60px;
     color: white;
 
 }
@@ -46,12 +50,12 @@
 }
 .small-box {
     position: absolute;
-    bottom:265px;
+    bottom:215px;
     width: 208px;
     height: 80px;
     font-size: 30px;
     margin-right: 50px;
-    margin-left: 136px;
+    margin-left: 166px;
     color: white;
 }
 .text2{
@@ -66,8 +70,8 @@
    
     display: flex;
     position: absolute;
-    bottom:648px;
-   margin-left: 754px;
+    bottom:658px;
+   margin-left: 1010px;
    justify-content: space-around;
 	align-items: center;
 }
@@ -76,7 +80,7 @@
        border-radius:8px;
         width:100px;
         color:whitesmoke;
-        margin-right: 50px;
+        margin-right: 30px;
         background-color: black;
         height: 30px;
 }    
@@ -84,7 +88,7 @@
         border-radius:8px;
         width:100px;
         color:whitesmoke;
-        margin-right: 50px;
+        margin-right: 30px;
         background-color:black;
         height: 30px;
 }

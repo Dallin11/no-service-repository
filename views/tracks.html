@@ -1,0 +1,28 @@
+<section class="lede section--padding-both">
+    <div class="container">
+        <p>tTracks page</p>
+    </div>
+</section>
+<div ng-repeat= "track in tracks" class="product-grid__item   grid__item one-half large--one-third" >
+
+    <!--Repeat over your data and display it below -->
+ <!--Product Image-->
+    <a class="product-grid__product">
+
+        
+    </a>
+
+    <!--Product Meta-->
+    <div class="product-grid__meta">
+
+        
+        <!-- Tittle-->
+        <h3 class="product-grid__name"><a>{{item.title}}</a></h3>
+        <!--Product Description--> 
+        <h4 class="product-grid__sub">{{item.desc}}<!--Desc--></h4>
+
+        <!--Product Price-->
+        <div class="product-grid__price">{{item.price}}<!--Price--></div>
+    </div>
+</div>
+</div>
