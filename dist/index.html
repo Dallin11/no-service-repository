@@ -10,11 +10,29 @@
 </head>
 
 <body ng-controller="mainCtrl">
-
     <div class="background">
+   <div class="menu">
+  <ul>
+    <a href="#"><li>Artists</li></a>
+    <a href="#"><li>Albums</li></a>
+    <a href="#"><li>Search</li></a>
+  </ul>
+</div>    
+       
+ <div class="caption">
+<div class="big-box">
+   <h1>YOUR MUSIC</h1>
+        </div>
+    <p class="small-box">Tuned to you</p>
 
 
-        <div class="placeholder" ng-repeat="artist in artists">
+<div class="bottom-buttons">
+        <button class="sign">Sign up</button>
+        <button class="log">Log in</button>
+  </div>
+  </div>
+</div>
+    <div class="placeholder" ng-repeat="artist in artists">
             <h1>{{artist.name}}</h1>
             <h1>{{artist.popularity}}</h1>
             <h1>{{artist.genres}}</h1>
@@ -25,7 +43,7 @@
             <h1>{{track.track_number}}</h1>
         </div>
 
-    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
     <script src="./dist/js/bundle.js"></script>
 
