@@ -1,5 +1,4 @@
 .background {
-    // background-color: red;
     background-image: url("../aiden-marples-3052.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,32 +26,65 @@
     display: flex;
 }
 .big-box{
-	height: 126px;
-	width: 100px;
+    position: absolute;
+    bottom: 395px;
+    width: 300px;
+    font-size: 20px;
     margin-right: 50px;
-	background-color: #3B55E6;
-    height: 50px;
-    top: 50px;
-    background-color: red;
+    margin-left: 50px;
     color: white;
 
 }
+.text1{
+     flex: display;
+    position: absolute;
+    justify-content: center;
+	align-items: center;
+    width: 484px;
+    height: 80px;
+    font-size: 36px;
+}
 .small-box {
-    width: 100px;
-    font-size: 20px;
+    position: absolute;
+    bottom:265px;
+    width: 208px;
+    height: 80px;
+    font-size: 30px;
     margin-right: 50px;
-    background-color:blue ;
+    margin-left: 136px;
     color: white;
 }
+.text2{
+    flex: display;
+    position: absolute;
+    justify-content: center;
+	align-items: center;
+    width: 335px;
+    height:58.82px
+}
+.bottom-buttons{
+   
+    display: flex;
+    position: absolute;
+    bottom:648px;
+   margin-left: 754px;
+   justify-content: space-around;
+	align-items: center;
+}
+
 .sign {
+       border-radius:8px;
         width:100px;
-        color:blue;
+        color:whitesmoke;
         margin-right: 50px;
-        background-color: white;
+        background-color: black;
+        height: 30px;
 }    
 .log{
-    width:100px;
-        color:blue;
+        border-radius:8px;
+        width:100px;
+        color:whitesmoke;
         margin-right: 50px;
-        background-color: white;
+        background-color:black;
+        height: 30px;
 }
