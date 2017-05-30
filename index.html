@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html ng-app="app" class="background">
 
 <head>
     <meta charset="UTF-8">
@@ -10,50 +10,48 @@
 </head>
 
 <body ng-controller="mainCtrl">
+<header>
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#9776;</button>
+</header>
+
+    
+   <div class="menu">
+  <ul>
+   <!--{{data}}-->
+    <a ui-sref="home"><li>Home</li></a>
+    <a ui-sref="artists"><li>Artists</li></a>
+    <a ui-sref="albums"><li>Albums</li></a>
+    <a ui-sref="search"><li>Search</li></a>
+  </ul>
+</div>  
 
 <ui-view></ui-view>
 
-    <div class="background">
-   <div class="menu">
-  <ul>
-    <a href="home"><li>Home</li></a>
-    <a href="artists"><li>Artists</li></a>
-    <a href="albums"><li>Albums</li></a>
-     <a href="tracks"><li>Tracks</li></a>
-    <a href="search"><li>Search</li></a>
-  </ul>
-</div>    
-       
- <div class="caption">
-<div class="big-box">
-   <h1 class="text1">YOUR MUSIC</h1>
-        </div>
- <div class="small-box">
-    <p class="text2">Tuned to you</p>
-</div>
 
-<div class="bottom-buttons">
-        <button class="sign">Sign up</button>
-        <button class="log">Log in</button>
-  </div>
-  </div>
-</div>
+  
+
+       
+
     <!--<div class="placeholder" ng-repeat="artist in artists">
             <h1>{{artist.name}}</h1>
             <h1>{{artist.popularity}}</h1>
             <h1>{{artist.genres}}</h1>
         </div>-->
 
-      <div class="placeholder" ng-repeat="track in tracks">
+      <!--<div class="placeholder" ng-repeat="track in tracks">
             <h1>{{track.name}}</h1>
             <h1>{{track.track_number}}</h1>
-        </div>
-
-
+        </div>-->
+    
+<script src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
     <script src="./dist/js/bundle.js"></script>
-
+<script src="js/controller/artistsCtrl.js"></script>
 </body>
 
 </html>
+

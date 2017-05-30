@@ -3,13 +3,36 @@
     background-size: cover;
     background-repeat: no-repeat;
     height:100vh;
-    flex: display;
+}
+.artistTitle {
+display: flex;
+justify-content: center;
+	align-items: center;
+color: white;
+
+}
+.albumName{
+    display: flex;
+justify-content: center;
+	align-items: center;
+    color:white;
+}
+.albumInput{
+    position: absolute;
+    top:20px;
+    right: 10px;
+}
+.artistInput{
+    position: absolute;
+    top:20px;
+    right: 10px;
+
 }
 .hamburger{
   background:none;
   position:absolute;
   top:0;
-  right:0;
+  left:0;
   line-height:45px;
   padding:5px 15px 0px 15px;
   color:#999;
@@ -20,14 +43,16 @@
   outline:none;
   z-index:10000000000000;
 }
+
 .menu{
+    position: absolute;
     color: #0981DA;
 
 }
 .caption{
-    position: absolute;
-    bottom:0px;
-    display: flex;
+    // position: absolute;
+    // bottom:0px;
+    // display: flex;
 }
 .big-box{
     position: absolute;
@@ -67,16 +92,17 @@
     height:58.82px
 }
 .bottom-buttons{
-   
-    display: flex;
-    position: absolute;
-    bottom:658px;
-   margin-left: 1010px;
-   justify-content: space-around;
-	align-items: center;
+    // display: flex;
+    // justify-content: flex-end;
+    margin-top: 10px;
+    width:40px;
+    // position: absolute;
+    // margin-left: 1010px;
+//    justify-content: space-around;
+	// align-items: center;
 }
 
-.sign {
+.sign{
        border-radius:8px;
         width:100px;
         color:whitesmoke;
@@ -84,7 +110,9 @@
         background-color: black;
         height: 30px;
 }    
-.log{
+
+.log {
+   
         border-radius:8px;
         width:100px;
         color:whitesmoke;

@@ -1,0 +1,13 @@
+<section>
+    <h1 class="albumName">Album Page</h1>
+      
+   <input class="albumInput" type="text" placeholder="Albums Name" ng-model="filterText.album">
+   <section> 
+
+<ul class="albumName" ng-repeat="album in data2 | filter: filterText.album">
+
+<h3>{{album}}</h3>
+    </ul>
+
+ </section>
+</section>

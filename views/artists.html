@@ -1,0 +1,16 @@
+<section>
+    <h1 class="ArtistText">Artists Page</h1>
+      
+      
+   <input class="artistInput" type="text" placeholder="ArtistsName" ng-model="filterText.artist">
+   <section class="artistName"> 
+
+ <ul class="artistTitle"ng-repeat="artist in data | filter: filterText.artist">
+<h3>{{artist}}</h3>
+</ul>
+ </section>
+</section>
+
+
+
+        

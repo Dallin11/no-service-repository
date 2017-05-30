@@ -1,40 +1,36 @@
 angular.module("app").controller("mainCtrl", function ($scope, mainSvc) {
 
-    // $(".cross").hide();
-    // $(".menu").hide();
-    // $(".hamburger").click(function () {
-    //     $(".menu").slideToggle("slow", function () {
-    //         $(".hamburger").hide();
-    //         $(".cross").show();
-    //     });
-    // });
 
-    // $(".cross").click(function () {
-    //     $(".menu").slideToggle("slow", function () {
-    //         $(".cross").hide();
-    //         $(".hamburger").show();
-    //     });
-    // });
+ $scope.data = mainSvc.data;
 
-    	$scope.getAlbums = function(){
-    		mainSvc.getAlbums().then(function(response){
-    			$scope.albums = response.data;
-    		});
-    	};
-    $scope.getAlbums();
+});
 
-    $scope.getArtistsAndTracks = function(){
-        mainSvc.getArtist().then(function(response){
-          $scope.artists = response.data.artists;
-          console.log($scope.artists)
+
+
+    $(".cross").hide();
+    $(".menu").hide();
+    $(".hamburger").click(function () {
+        $(".menu").slideToggle("slow", function () {
+            $(".hamburger").hide();
+            $(".cross").show();
         });
+    });
 
-        mainSvc.getTracks().then(function(response){
-            $scope.tracks = response.data.items;
-            console.log($scope.tracks)
+    $(".cross").click(function () {
+        $(".menu").slideToggle("slow", function () {
+            $(".cross").hide();
+            $(".hamburger").show();
         });
-    };
-    $scope.getArtistsAndTracks();
+    });
 
-}); // <--- end of controller
+    // $scope.getAlbums = mainSvc.getAlbums
+
+    // $scope.getArtists = mainSvc.getArtists
+    
+    // $scope.getTracks = mainSvc.getTracks
+
+ // <--- end of controller
+
+
+
 

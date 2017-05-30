@@ -8,12 +8,14 @@ angular.module("app", ["ui.router"])
 
 .state("artists",{
       url:'/artists',
-      templateUrl:"./views/artists.html"
+      templateUrl:"./views/artists.html",
+      controller: "artistsCtrl"
   })
 
   .state("albums",{
       url:'/albums',
-      templateUrl:"./views/about.html"
+      templateUrl:"./views/albums.html",
+      controller:"albumsCtrl"
   })
 
   .state("search",{
